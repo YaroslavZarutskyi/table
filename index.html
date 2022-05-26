@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>table</title>
+	<style type="text/css">
+		body{
+			background:  linear-gradient(to right, #000000, #FF0000, #B22222, #8B0000, #FFA500, #FF8C00, #FF4500, #FFFFE0, #FFFF00, #FFD700, #228B22, #008000, #006400, #87CEEB, #87CEFA, #00BFFF, #6495ED, #4169E1, #0000FF, #6A5ACD, #483D8B, #4B0082, #FFFFFF);
+		}
+		p{
+			background:  linear-gradient(to right, #000000, #FF0000, #B22222, #8B0000, #FFA500, #FF8C00, #FF4500, #FFFFE0, #FFFF00, #FFD700, #228B22, #008000, #006400, #87CEEB, #87CEFA, #00BFFF, #6495ED, #4169E1, #0000FF, #6A5ACD, #483D8B, #4B0082, #FFFFFF);
+			color: white;
+			font-size: 50px;
+			font-family: 'Lobster', cursive;
+			text-align: center;
+			border: ridge 4px white;
+			margin: -2px;
+			text-shadow: black 2px 2px;
+			box-shadow: black 4px 4px 4px 4px;
+
+		}
+		p:hover{
+			background:  linear-gradient(to left, #000000, #FF0000, #B22222, #8B0000, #FFA500, #FF8C00, #FF4500, #FFFFE0, #FFFF00, #FFD700, #228B22, #008000, #006400, #87CEEB, #87CEFA, #00BFFF, #6495ED, #4169E1, #0000FF, #6A5ACD, #483D8B, #4B0082, #FFFFFF);
+			color: white;
+			font-size: 50px;
+			font-family: 'Lobster', cursive;
+			text-align: center;
+		}
+		table{
+			width: 800px;
+			height: 500px;
+			text-align: center;
+			color: white;
+			font-family: 'Lobster', cursive;
+			margin: auto;
+			font-size: 20px;
+			border-collapse: collapse;
+			padding: 3px 7px 2px 7px;
+			background: linear-gradient(to left, #DCDCDC, #D3D3D3, #C0C0C0, #A9A9A9, #808080);
+			margin-top: 120px;
+			text-shadow: white 1px 1px;
+			box-shadow: black 4px 4px 4px 4px;
+		}
+		th, td{
+			border: ridge 4px white;
+		}
+		th{
+		   background: linear-gradient(to right, #000000, #FF0000, #B22222, #8B0000, #FFA500, #FF8C00, #FF4500, #FFFFE0, #FFFF00, #FFD700, #228B22, #008000, #006400, #87CEEB, #87CEFA, #00BFFF, #6495ED, #4169E1, #0000FF, #6A5ACD, #483D8B, #4B0082, #FFFFFF);
+		   color: white;
+		   font-size: 20px;
+		   text-shadow: none;
+		   text-shadow: black 2px 2px;
+		}
+		th:hover{
+			background: linear-gradient(to left, #000000, #FF0000, #B22222, #8B0000, #FFA500, #FF8C00, #FF4500, #FFFFE0, #FFFF00, #FFD700, #228B22, #008000, #006400, #87CEEB, #87CEFA, #00BFFF, #6495ED, #4169E1, #0000FF, #6A5ACD, #483D8B, #4B0082, #FFFFFF);
+		   color: white;
+		}
+		tr{
+			height: 1cm;
+			color: black;
+        }
+        tr:hover{
+        	background-color: lightgrey;
+        }
+        .black:hover{
+        	background-color: black;
+        	color: white;
+        	font-size: 25px;
+        	text-shadow: black 1px 1px;
+        }
+        .red:hover{
+        	background: linear-gradient(#FF0000, #B22222, #8B0000);
+        	color: white;
+        	font-size: 25px;
+        	text-shadow: black 2px 2px;
+        }
+        .orange:hover{
+        	background: linear-gradient(#FFA500, #FF8C00, #FF4500);
+        	color: white;
+        	font-size: 25px;
+        	text-shadow: black 2px 2px;
+        }
+        .yellow:hover{
+        	background: linear-gradient(#FFFFE0, #FFFF00, #FFD700);
+        	color: white;
+        	font-size: 25px;
+        	text-shadow: black 2px 2px;
+        }
+        .green:hover{
+        	background: linear-gradient(#228B22, #008000, #006400);
+        	color: white;
+        	font-size: 25px;
+        	text-shadow: black 2px 2px;
+        }
+        .skyblue:hover{
+        	background: linear-gradient(#87CEEB, #87CEFA, #00BFFF);
+        	color: white;
+        	font-size: 25px;
+        	text-shadow: black 2px 2px;
+        }
+        .blue:hover{
+        	background: linear-gradient(#6495ED, #4169E1, #0000FF);
+        	color: white;
+        	font-size: 25px;
+        	text-shadow: black 2px 2px;
+        }
+        .indigo:hover{
+        	background: linear-gradient(#6A5ACD, #483D8B, #4B0082);
+        	color: white;
+        	font-size: 25px;
+        	text-shadow: black 2px 2px;
+        }
+        .white:hover{
+        	background-color: white;
+        	color: black;
+        	font-size: 25px;
+        }
+	</style>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+<p>Table</p>
+<table>
+	<tr>
+		<th>Color</th>
+		<th>Name</th>
+		<th>HEX</th>
+		<th>RGB</th>
+	</tr>
+	<tr class="black">
+		<td style="background-color: #000; width: 150px; opacity: 0.7;"></td>
+		<td>Black</td>
+		<td>#000000</td>
+		<td>(0,0,0)</td>
+	</tr>
+	<tr class="red">
+		<td style="background: linear-gradient(#FF0000, #B22222, #8B0000); width: 150px; opacity: 0.7;"></td>
+		<td>Red</td>
+		<td>#FF0000</td>
+		<td>(255,0,0)</td>
+	</tr>
+	<tr class="orange">
+		<td style="background: linear-gradient(#FFA500, #FF8C00, #FF4500); width: 150px; opacity: 0.7;"></td>
+		<td>Orange</td>
+		<td>#FFA500</td>
+		<td>(255,165,0)</td>
+	</tr>
+	<tr class="yellow">
+		<td style="background: linear-gradient(#FFFFE0, #FFFF00, #FFD700); width: 100px; opacity: 0.7;"></td>
+		<td>Yellow</td>
+		<td>#FFFF00</td>
+		<td>(255,255,0)</td>
+	</tr>
+	<tr class="green">
+		<td style="background: linear-gradient(#228B22, #008000, #006400); width: 150px; opacity: 0.7;"></td>
+		<td>Green</td>
+		<td>#008000</td>
+		<td>(0,128,0)</td>
+	</tr>
+	<tr class="skyblue">
+		<td style="background: linear-gradient(#87CEEB, #87CEFA, #00BFFF); width: 150px; opacity: 0.7;"></td>
+		<td>Sky Blue</td>
+		<td>#00BFFF</td>
+		<td>(0,191,255)</td>
+	</tr>
+	<tr class="blue">
+		<td style="background: linear-gradient(#6495ED, #4169E1, #0000FF); width: 150px; opacity: 0.7;"></td>
+		<td>Blue</td>
+		<td>#0000FF</td>
+		<td>(0,0,255)</td>
+	</tr>
+	<tr class="indigo">
+		<td style="background: linear-gradient(#6A5ACD, #483D8B, #4B0082); width: 150px; opacity: 0.7;"></td>
+		<td>Indigo</td>
+		<td>#4B0082</td>
+		<td>(75,0,130)</td>
+	</tr>
+	<tr class="white">
+		<td style="background-color: white; width: 150px; opacity: 0.7;"></td>
+		<td>White</td>
+		<td>#FFFFFF</td>
+		<td>(255,255,255)</td>
+	</tr>
+</table>
+</body>
+</html>
